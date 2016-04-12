@@ -12,6 +12,7 @@ BULLETTRAIN_GIT_CLEAN="%F{028} ✔%F{black}"
 BULLETTRAIN_GIT_COLORIZE_DIRTY=true
 
 source "${HOME}/.zgen/zgen.zsh"
+
 if ! zgen saved; then
   zgen oh-my-zsh
 
@@ -30,6 +31,9 @@ if ! zgen saved; then
   
   zgen save
 fi
+
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
 
 setopt HIST_IGNORE_ALL_DUPS
 
