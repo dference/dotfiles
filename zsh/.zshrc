@@ -37,5 +37,7 @@ if ! zgen saved; then
 fi
 
 # VARS
+export PATH="/usr/local/sbin:$PATH"
+
 export GOPATH=/Users/dmitriiivashko/Projects/Go
-PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:$GOPATH/bin"
