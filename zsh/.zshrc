@@ -39,5 +39,9 @@ fi
 # VARS
 export PATH="/usr/local/sbin:$PATH"
 
+# GO
 export GOPATH=/Users/dmitriiivashko/Projects/Go
 export PATH="$PATH:$GOPATH/bin"
+
+# NODE
+export PATH=$HOME/.nodebrew/current/bin:$PATH
