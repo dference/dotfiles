@@ -15,6 +15,9 @@ BULLETTRAIN_GIT_COLORIZE_DIRTY=true
 # ZSH options
 setopt HIST_IGNORE_ALL_DUPS
 
+# OH MY ZSH OPTIONS
+DISABLE_AUTO_UPDATE="true"
+
 # ZGEN
 source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
@@ -45,3 +48,5 @@ export PATH="$PATH:$GOPATH/bin"
 
 # NODE
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export NVM_DIR="$HOME/.nvm"
+# . "$(brew --prefix nvm)/nvm.sh"
