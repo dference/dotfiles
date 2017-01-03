@@ -50,3 +50,5 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 # export NVM_DIR="$HOME/.nvm"
 # . "$(brew --prefix nvm)/nvm.sh"
+
+export PATH="$HOME/.yarn/bin:$PATH"
