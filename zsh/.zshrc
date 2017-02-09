@@ -1,4 +1,9 @@
 # PROMPT
+BULLETTRAIN_PROMPT_ORDER=(
+    status
+    dir
+    git
+)
 BULLETTRAIN_TIME_SHOW=false
 BULLETTRAIN_PROMPT_SEPARATE_LINE=false
 BULLETTRAIN_PROMPT_ADD_NEWLINE=false
@@ -38,6 +43,12 @@ if ! zgen saved; then
   
   zgen save
 fi
+
+# ALIASES
+alias redisup='redis-server /usr/local/etc/redis.conf'
+alias redisdown='redis-cli shutdown'
+alias mysqlup='mysql.server start'
+alias mysqldown='mysql.server stop'
 
 # VARS
 export PATH="/usr/local/sbin:$PATH"
