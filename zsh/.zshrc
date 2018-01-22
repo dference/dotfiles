@@ -43,6 +43,9 @@ antigen theme caiogondim/bullet-train.zsh bullet-train
 # ANTIGEN APPLY
 antigen apply
 
+# UTF
+export LANG=UTF-8
+
 # ALIASES
 alias redisup='redis-server /usr/local/etc/redis.conf'
 alias redisdown='redis-cli shutdown'
