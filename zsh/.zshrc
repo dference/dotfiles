@@ -44,7 +44,8 @@ antigen theme caiogondim/bullet-train.zsh bullet-train
 antigen apply
 
 # UTF
-export LANG=UTF-8
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # ALIASES
 alias redisup='redis-server /usr/local/etc/redis.conf'
