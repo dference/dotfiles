@@ -59,4 +59,6 @@ alias mysqldown='mysql.server stop'
 
 # VARS
 export PATH="/usr/local/sbin:$PATH"
-
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color
