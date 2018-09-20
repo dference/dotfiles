@@ -17,6 +17,7 @@ BULLETTRAIN_HG_SHOW=false
 BULLETTRAIN_GIT_CLEAN="%F{028} ✔%F{black}"
 BULLETTRAIN_GIT_COLORIZE_DIRTY=true
 
+SPACESHIP_BATTERY_SHOW=false
 SPACESHIP_HG_SHOW=false
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_NODE_SHOW=false
@@ -87,9 +88,8 @@ alias mysqldown='mysql.server stop'
 
 # VARS
 export PATH="/usr/local/sbin:$PATH"
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
+#export TERM=
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
