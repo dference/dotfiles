@@ -88,14 +88,29 @@ export GOPATH=/Users/dmitriiivashko/Projects/Go
 export PATH="$PATH:$GOPATH/bin"
 
 # VARS
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export TERM=xterm-256color
 #export TERM=
 
+# Ruby
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# export PATH="$PATH:$HOME/.rvm/bin"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#export PATH="/usr/local/opt/ruby/bin:$PATH"
+#export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 
 # export OPENCV_INCLUDE_DIR="/usr/local/Cellar/opencv/3.4.3/include"
 # export OPENCV_LIB_DIR="/usr/local/Cellar/opencv/3.4.3/lib"
 # export OPENCV_BIN_DIR="OPENCV_BIN_DIR"
+
+# Postgres
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+
+# Android
+eval "$(direnv hook zsh)"
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
