@@ -18,6 +18,7 @@ BULLETTRAIN_GIT_CLEAN="%F{028} ✔%F{black}"
 BULLETTRAIN_GIT_COLORIZE_DIRTY=true
 
 SPACESHIP_BATTERY_SHOW=false
+SPACESHIP_GCLOUD_SHOW=false
 SPACESHIP_HG_SHOW=false
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_NODE_SHOW=false
@@ -57,10 +58,13 @@ antigen use oh-my-zsh
 
 # PLUGINS
 antigen bundle git
+antigen bundle thefuck
 antigen bundle git-flow
 antigen bundle z
 antigen bundle brew
 antigen bundle sublime
+antigen bundle docker
+antigen bundle docker-compose
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
@@ -82,6 +86,7 @@ alias redisup='redis-server /usr/local/etc/redis.conf'
 alias redisdown='redis-cli shutdown'
 alias mysqlup='mysql.server start'
 alias mysqldown='mysql.server stop'
+alias imshop-env='brew services run postgresql@10; brew services run rabbitmq; brew services run redis; brew services run elasticsearch-full; brew services run kibana-full'
 
 # GO
 export GOPATH=/Users/dmitriiivashko/Projects/Go
@@ -114,3 +119,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+alias idea='open . -na "IntelliJ IDEA.app"'
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
